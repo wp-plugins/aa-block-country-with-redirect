@@ -1,18 +1,16 @@
 <?php 
 /**
  * Plugin Name: AA Block country with redirect
- * Plugin URI: http://wordpress.org/.../
- * Description: Go to setting
+ * Plugin URI: https://wordpress.org/plugins/aa-block-country-with-redirect/
+ * Description: It's a nice plugin with which you can redirect your visitor according to their country. You just include country code by settings.
  * Version: 1.0
  * Developer + Idea: A. Roy / A. Mahmud
  * Author URI: http://webdesigncr3ator.com
- * Support Email : contactus.aa@gmail.com
+ * Support Email : contact2us.aa@gmail.com
  * License: GPL2
  **/
 	
-	
-	
-	
+		
 		
 function aa_redire_block_getUserIP()
 {
@@ -55,27 +53,6 @@ if(isset($block_country[$usr_country])){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // create custom plugin settings menu
 add_action('admin_menu', 'aa_redire_add_menu_block_con');
 
@@ -112,10 +89,8 @@ function aa_redire_ba_baw_settings_page() {
 	Redirect url
 	<br>
 	<input type="text" name="redirect_block_url" value="<?php echo esc_attr( get_option('redirect_block_url') ); ?>" />
-         
-     
-
-    
+           
+  
     <?php submit_button(); ?>
 
 </form>
